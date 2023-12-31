@@ -5,7 +5,7 @@ print("---------------------------")
 print("Loading...")
 local placeid = game.PlaceId
 local placename = game:GetService("MarketplaceService"):GetProductInfo(placeid)
-function GetServerRegion()
+--[[function GetServerRegion()
 	local http = game:GetService("HttpService")
 
 	local result
@@ -32,7 +32,8 @@ function GetServerRegion()
 		return nil, nil
 	end
 end
-local sregion1,sregion2 = GetServerRegion()
+local sregion1,sregion2 = GetServerRegion()]]
+local sregion1, sregion2 = "Region Detection Not Implemented"
 local plrname, plruserid
 if game:GetService("RunService"):IsClient() then
   plrname = tostring(game.Players.LocalPlayer.Name)
