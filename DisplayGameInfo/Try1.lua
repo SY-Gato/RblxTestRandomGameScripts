@@ -3,6 +3,7 @@ print("DisplayGameInfo v1, created by SY-Gato (GitHub, roblox user: master200cra
 warn("LICENSED UNDER MIT; Copyright (c) 2023 SY-Gato")
 print("---------------------------")
 print("Loading...")
+print("Finding PlaceId and PlaceName...")
 local placeid = game.PlaceId
 local placename = game:GetService("MarketplaceService"):GetProductInfo(placeid)
 --[[function GetServerRegion()
@@ -33,6 +34,7 @@ local placename = game:GetService("MarketplaceService"):GetProductInfo(placeid)
 	end
 end
 local sregion1,sregion2 = GetServerRegion()]]
+print("Skipping Region Detection...")
 local sregion1, sregion2 = "Region Detection Not Implemented"
 local plrname, plruserid
 if game:GetService("RunService"):IsClient() then
