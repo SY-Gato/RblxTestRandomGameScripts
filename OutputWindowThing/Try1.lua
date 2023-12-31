@@ -7,4 +7,9 @@ local runServ = game:GetService("RunService")
 if runServ:IsClient() then
   print("Script Side Detected! Type: Client!")
   warn("Script Must Be Ran As Server! Fatal Error!")
-  warn("Deleting Self and References
+  warn("Deleting Self and References...")
+  script:Destroy()
+else
+  print("Script Side Detected! Type: Server!")
+  print("No errors found! Continuing...")
+  
